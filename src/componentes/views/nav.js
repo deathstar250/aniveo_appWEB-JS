@@ -5,6 +5,7 @@ import  Logo from '../../Materials/multimedia/icono.png';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+//import 'https://kit.fontawesome.com/db5a0a0049.js';
 
 import  '../../Materials/styles/nav-styles.css'
 
@@ -43,7 +44,7 @@ class Nav extends Component {
             <a class="navbar-brand" href="../home/view.home.html" id="view.title">ANIVEO  </a>
             <form class=" search-box nav_pagination">
                 <input class="search_txt" type="search" placeholder="Escribe para buscar" aria-label="Search" />
-                <a class="search_btn" href="../pagination/view.pagination.html">
+                <a clanps="search_btn" href="../pagination/view.pagination.html">
                     <i class="fas fa-search color"></i>
                 </a>
             </form>

@@ -259,3 +259,19 @@ footer {
 .notborder {
     border-top: 0;
 }
+
+/*
+
+Estilos del reproductot
+
+*/
+
+.player-style{
+    background-color: black;
+    height: 500px;
+    width: 800;
+    align-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
