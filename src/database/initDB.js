@@ -1,4 +1,4 @@
-async function init(client, cb) {
+/*async function init(client, cb) {
   Promise.all([
     await crearCosas(client),
     await crearCategorias(client),
@@ -30,3 +30,4 @@ async function crearCosasCategorias(client) {
 }
 
 module.exports = (client, cb) => init(client, cb);
+*/

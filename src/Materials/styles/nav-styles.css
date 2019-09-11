@@ -3,6 +3,14 @@
     margin-bottom: 140px;
 }
 
+
+.nombre_usuario {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
 .search-box {
     transform: translate(-50%, -50%);
     background: #FBDB14;
@@ -274,4 +282,13 @@ Estilos del reproductot
     margin-bottom: 50px;
     margin-top: 50px;
 
+}
+
+
+/*Estilos*/
+
+.alig-carrousel {
+    display: inline-block;
+    margin-top: 50px;
+    background-color: grey;
 }

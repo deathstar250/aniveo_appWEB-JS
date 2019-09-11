@@ -1,7 +1,6 @@
-const { Client } = require('pg');
-const initDB = require('./initDB');
+import { Pool } from 'pg';
 
- const client = new Client({
+ const client = new Pool({
    user: 'postgres',
    host: '127.0.0.1',
    database: 'ANIVEO',
@@ -9,12 +8,16 @@ const initDB = require('./initDB');
    port: 4444,
  });
 
-client = new Client();
-
-client.connect();
-
-initDB(client, function(){
-  console.log("BD lista");
+client.connect(() => {
+  console.log("conetado")
 });
 
-module.exports = client;
+const getLink = () => {
+  client.query('SELECT * FROM pelicula', (error, response) => {
+    console.log('response: ', response);
+  });
+}
+
+module.exports = {
+  getLink,
+};

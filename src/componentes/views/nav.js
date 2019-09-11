@@ -50,8 +50,8 @@ class Nav extends Component {
             </form>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src={Logo} alt="Smiley face" height="30" width="30" className="pagination_img" />
-                    MACIEL
+                    <img class="nombre_usuario" src={Logo} alt="Smiley face" height="30" width="30" className="pagination_img" />
+                    <div class="nombre_usuario">{this.props.nombre}</div>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Ayuda</a>
