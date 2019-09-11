@@ -8,6 +8,52 @@ import Player from './componentes/views/player';
 class App extends Component {
 
   
+    
+  state = {
+    contenido: []
+  }
+
+  componentDidMount () {
+    this.getContenido();
+  }
+
+  getContenido = _ => {
+    fetch('http://localhost:3002/GetLink')
+    .then(Response => Response.json())
+    .then(({ contenido }) => {
+      console.log(contenido)
+    })
+    .catch(err => console.error(err))
+  }
+
+  
+
+  renderContenido = ({ id,titulo,genero,sinapsis,calificacion_id,reparto,fecha_estreno,link,duracion_minutos,duracion_segundos }) => <div key={id}>{titulo}>{genero}>{sinapsis}>{calificacion_id}>{reparto}>{fecha_estreno}>{link}>{duracion_minutos}>{duracion_segundos}></div>;
+
+
+
+
+  render() {
+
+    let videoLink = '';
+    const { contenido } = this.state;
+    return (
+
+
+      <div>
+        <div>
+          {contenido.map(this.renderContenido)}
+        </div>
+        <Nav></Nav>
+        <Player video={videoLink}></Player>
+
+      </div>
+    );
+  }
+}
+
+export default App;
+/*  
   constructor(props){
     super(props);
     this.state = {
@@ -42,21 +88,4 @@ class App extends Component {
     });
 
   }
-
-  render() {
-
-    let videoLink = this.state.link;
-
-    return (
-
-
-      <div>
-        <Nav></Nav>
-        <Player video={videoLink}></Player>
-
-      </div>
-    );
-  }
-}
-
-export default App;
+*/

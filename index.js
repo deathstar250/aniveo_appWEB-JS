@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const bodyParser = require('body-parser');
 
 const routerCategorias = require('./routers/categorias');
@@ -22,4 +22,4 @@ app.set('view engine', 'ejs');
 app.listen(PORT, function(err) {
   if(err) throw err;
   console.log(`Servidor escuchando en puerto ${PORT}`)
-});
+});*/
