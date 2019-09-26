@@ -4,11 +4,255 @@
 }
 
 
+.header{
+    color: #C2A200;
+}
+.navbar {
+    height: 56px;
+    background-color: #201f20;
+    color: #C2A200;
+}
+
+.bodi {
+    background-color: #323033;
+}
+
+.bodi::-webkit-scrollbar {
+    display: none;
+}
+.videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    height: 256.17px;
+}
+
+.imagen {
+    padding-left: 0px;
+    margin: 0;
+    height: 256.17px;
+    padding: 0px;
+}
+
+.col-4np {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0;
+}
+.divarriba{
+    display:flex;
+    justify-content: center;
+    height: 56px;
+}
+.title {
+    font-family: 'Hammersmith One';
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.title2 {
+    margin-top: 200px;
+    font-family: 'Hammersmith One';
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.comentario{
+    margin-top: 300px;
+    font-family: 'Hammersmith One';
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.overlayFade {
+    height: 256.17px;
+    width: 455.41px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    background-color: #ff946bbd;
+}
+
+.overlay {
+
+    padding: 0px;
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 112px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay-mid {
+
+    padding: 0px;
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 112px;
+    margin-left: 455.41px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay2 {
+
+    padding: 0px;
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 368.17px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+
+body {
+
+      background-color: #323033;
+}
+
+.overlay3 {
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 624.34px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay-mid2 {
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 368.17px;
+    margin-left: 455.41px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay-mid3 {
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 624.34px;
+    margin-left: 455.41px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay-right2 {
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 368.17px;
+    margin-left: 910.82px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay-right3 {
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 624.34px;
+    margin-left: 910.82px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.overlay-right {
+    color: white;
+    position: absolute;
+    height: 256.17px;
+    width: 455.41px;
+    margin-top: 112px;
+    margin-left: 910.82px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #2525259c;
+}
+
+.col-4np:hover.overlay-mid2,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+
+.col-4np:hover.overlay-right2,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+.col-4np:hover.overlay-right3,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+.col-4np:hover.overlay3,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+.col-4np:hover.overlay-mid3,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+.col-4np:hover.overlay,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+
+.col-4np:hover.overlay-mid,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+
+.col-4np:hover.overlay,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+
+.col-4np:hover.overlay-right,
+.contenedor:hover .overlayFade {
+    opacity: 1;
+}
+
+.overlaytext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+
 .nombre_usuario {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
   text-transform: uppercase;
+  color: white;
 }
 
 .search-box {
@@ -130,10 +374,7 @@
     width: 80%;
 }
 
-.imagen {
-    height: 137px;
-    width: 137px;
-}
+
 
 .objeto {
     margin-top: 30px;
@@ -290,5 +531,6 @@ Estilos del reproductot
 .alig-carrousel {
     display: inline-block;
     margin-top: 50px;
-    background-color: grey;
+    background-color: #201f20;
 }
+

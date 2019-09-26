@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Padre from './componentes/escrito/Padre';
 import Hijo from './componentes/escrito/Hijo';
-import Nav from './componentes/views/nav';
-import Player from './componentes/views/player';
-import Carrousel from './componentes/views/carrousel';  
+import Nav from './componentes/mainComponents/nav';
+import Player from './componentes/mainComponents/player'; 
 import { compileFunction } from 'vm';
 
 class App extends Component {

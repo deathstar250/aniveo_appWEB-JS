@@ -41,10 +41,10 @@ class Nav extends Component {
         return(
             <div class="">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="../home/view.home.html" id="view.title">ANIVEO  </a>
+            <a class="navbar-brand" href="http://localhost:3000/" id="view.title">ANIVEO  </a>
             <form class=" search-box nav_pagination">
                 <input class="search_txt" type="search" placeholder="Escribe para buscar" aria-label="Search" />
-                <a clanps="search_btn" href="../pagination/view.pagination.html">
+                <a clanps="search_btn" href="#">
                     <i class="fas fa-search color"></i>
                 </a>
             </form>
@@ -56,7 +56,7 @@ class Nav extends Component {
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Ayuda</a>
                     <a class="dropdown-item" href="#">Listas</a>
-                    <a class="dropdown-item" href="../initial/presentacion/presentacion.html">Salir</a>
+                    <a class="dropdown-item" href="#">Salir</a>
                 </div>
                 </div>
             </nav>
