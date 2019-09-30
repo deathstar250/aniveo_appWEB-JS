@@ -23,11 +23,12 @@ class Frame_Home extends Component {
        
             <div class="row">
                 <div class="col-4np">
-                    <img class="imagen" src="https://img.wallpapersafari.com/desktop/1920/1080/29/14/sxryZQ.jpg" alt=""/>
-                    <a class="overlay overlayFade col-4np" href="got.html">
-                        <div class="overlaytext">Game Of Thrones</div>
+                    <a class="overlay overlayFade col-4np" href="http://localhost:3000/video">   
+                        <img class="imagen" src="https://img.wallpapersafari.com/desktop/1920/1080/29/14/sxryZQ.jpg" alt=""/>
                     </a>
-                </div>
+                    <div class="Informacion title1" href="http://localhost:3000/video"> {this.props.nombre}({this.props.reseña})</div>   
+                    <div class="Informacion title2"> Esta serie, basada en los libros de George R.R. Martin, muestra la competencia entre familias nobles de siete reinos de Westeros, cuya finalidad es ganar el control sobre el Trono de Hierro. </div>                              
+                </div>                                                                  
     
     
                 <div class="col-4np">
