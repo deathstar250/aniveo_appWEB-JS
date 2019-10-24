@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import Nav from '../mainComponents/nav';
 import Player from '../mainComponents/player';
+import Carrousel from '../mainComponents/carrousel';
 import { compileFunction } from 'vm';
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
   } 
 
   getContenido = () => {
-    fetch('http://localhost:3003/GetName')
+    fetch('http://localhost:3001/GetName')
     .then(response => response.json())
     .then(response => {
       console.log(response);
@@ -26,7 +27,7 @@ class App extends Component {
   }
 
   getLink = () => {
-    fetch('http://localhost:3003/GetLink')
+    fetch('http://localhost:3001/GetLink')
     .then(response => response.json())
     .then(response => {
       console.log(response);
@@ -60,6 +61,7 @@ class App extends Component {
         </div>
         <Nav nombre={contenido.map(this.renderContenido)}></Nav>
         <Player video={link.map(this.renderLink)}></Player>
+        <Carrousel/>
 
       </div>
     );

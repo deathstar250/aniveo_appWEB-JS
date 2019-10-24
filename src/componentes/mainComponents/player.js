@@ -20,7 +20,7 @@ class Player extends Component {
                 <div class="col-md-2 ">
                 </div>
                 <div class="col-md-8 player-style">
-                    <iframe width="930" height="500" src={this.props.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="873.33" height="500" src={this.props.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-2 ">
                 </div>

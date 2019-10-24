@@ -1,7 +1,5 @@
 import React, { Component } from 'react'; 
 import './App.css';
-import Padre from './componentes/escrito/Padre';
-import Hijo from './componentes/escrito/Hijo';
 import Nav from './componentes/mainComponents/nav';
 import Player from './componentes/mainComponents/player'; 
 import { compileFunction } from 'vm';
@@ -10,16 +8,28 @@ class App extends Component {
   
   state = { 
     contenido: [],
-    link: []
+    link: [],
+    videos: []
   }
 
   async componentDidMount(){
     await this.getContenido();
     await this.getLink();
+    await this.getVideos();
   } 
 
+  getVideos = () => {
+    fetch('http://localhost:3001/GetContenido-home')
+    .then(response => response.json())
+    .then(response => {
+      console.log(response);
+      this.setState({ videos: response.contenido })
+    })
+    .catch(err => console.error(err))
+  }
+
   getContenido = () => {
-    fetch('http://localhost:3003/GetName')
+    fetch('http://localhost:3001/GetName')
     .then(response => response.json())
     .then(response => {
       console.log(response);
@@ -29,7 +39,7 @@ class App extends Component {
   }
 
   getLink = () => {
-    fetch('http://localhost:3003/GetLink')
+    fetch('http://localhost:3001/GetLink')
     .then(response => response.json())
     .then(response => {
       console.log(response);
@@ -49,8 +59,10 @@ class App extends Component {
   
   render() {
     const { contenido } = this.state;
+    const { videos } = this.state;
     const { link } = this.state;
     console.log("contenido", link);
+
     //let videoLink = "https://www.youtube.com/embed/Dukqpeagrp0";
 
     //console.log(renderContenido());

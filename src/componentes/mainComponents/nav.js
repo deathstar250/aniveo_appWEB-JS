@@ -56,6 +56,7 @@ class Nav extends Component {
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Ayuda</a>
                     <a class="dropdown-item" href="#">Listas</a>
+                    <a class="dropdown-item" href="#">Cuenta</a>
                     <a class="dropdown-item" href="#">Salir</a>
                 </div>
                 </div>

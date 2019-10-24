@@ -8,11 +8,23 @@ class App extends Component {
   
   state = { 
     contenido: [],
+    home_contenido: []
+
   }
 
   async componentDidMount(){
     await this.getContenido();
- 
+    await this.getVideosContenido();
+   } 
+
+  getVideosContenido = () => {  
+    fetch('http://localhost:3003/GetContenido-home')
+    .then(response => response.json())
+    .then(response => {
+      console.log(response);
+      this.setState({ home_contenido: response.contenido })
+    })
+    .catch(err => console.error(err))
   } 
 
   getContenido = () => {
@@ -29,13 +41,10 @@ class App extends Component {
     return <div key= { x.nombre }>{ x.nombre }</div>
   } 
 
-  
   render() {
-    const { contenido } = this.state;
-    //let videoLink = "https://www.youtube.com/embed/Dukqpeagrp0";
 
-    //console.log(renderContenido());
-
+    const { home_contenido } = this.state;
+    const { contenido } = this.state;   
     
     return (
       <div>

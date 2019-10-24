@@ -4,6 +4,13 @@
 }
 
 
+body {
+    
+    background-color: #343a40;
+
+    }
+    
+
 .header{
     color: #C2A200;
 }
@@ -28,6 +35,18 @@
 
 .row {
     height: 256.17px;
+}
+
+.imagen2 {
+    display: inline-block;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 291px;
+    padding: 12px;
+    height: 200px;
+
+
 }
 
 .imagen {
@@ -65,10 +84,10 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    color: white;
+    color: #C2A200;
 }
 
-/*
+
 .comentario{
     margin-top: 300px;
     font-family: 'Hammersmith One';
@@ -86,6 +105,23 @@
     background-color: #ff946bbd;
 }
 
+.red {
+    background-color: red;
+}
+
+.carrousel {
+  
+}
+
+.carrousel-box {
+   
+    color: white;
+    font-size: 10px;
+    margin-top: 330px;
+    position: relative;
+
+}
+
 .overlay {
 
     padding: 0px;
@@ -94,7 +130,7 @@
     height: 256.17px;
     width: 455.41px;
     margin-top: 112px;
-    opacity: 0;
+    opacity: 0.3;
     transition: all .3s ease;
     background-color: #2525259c;
 }
@@ -127,10 +163,6 @@
 }
 
 
-body {
-
-      background-color: #323033;
-}
 
 .overlay3 {
     color: white;
@@ -254,7 +286,7 @@ body {
     font-family: sans-serif;
 }
 
-*/
+
 
 .col-4np {
     -ms-flex: 0 0 33.333333%;
@@ -542,7 +574,6 @@ Estilos del reproductot
 .player-style{
     background-color: black;
     height: 500px;
-    width: 800;
     align-content: center;
     margin-bottom: 50px;
     margin-top: 50px;
